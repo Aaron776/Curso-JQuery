@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+</head>
+<body>
+	<h1>HOLA MUNDO</h1>
+	<p>djfsjdhkgjhgjgjskgksd</p>
+
+
+
+
+
+
+
+
+<script type="text/javascript" src="jquery-3.6.0.min.js"></script>
+<script type="text/javascript">
+	//Ocultar un elemento html ( que no se muestre en pantalla): Para esto usamos el metodo hide() pero antes debemos poner un selector con comillas y en las comillas poenmos la etiqueta que queremos ocultar
+$("h1").hide()
+//El inconveniente que tendriamos con este metodo de ocultar seria que si tenemos varias etiquetas con el mismo tipo o nombre todas se ocultarias y no solo una
+
+// En Jquery como una buena practica siempre es la de poner codigo jquery dentro del ebento document. ready es lo mas aconsajable porque nos asegura que nuestro documento esta listo para pode trabajar en el ademas todo lo que hagamos dentro del document ready tendra efecto en toda la pagina o documento y no solo en algunas partes
+
+$(document).ready(function () {
+	$("p").hide()
+});
+</script>
+</body>
+</html>

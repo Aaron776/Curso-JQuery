@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+</head>
+<body>
+
+<script type="text/javascript">
+					/*Métodos y funciones para efectos en JQuery
+En la siguiente tabla se listan todos los métodos de JQuery, disponibles para crear efectos y animaciones.*/
+hide()	Oculta los elementos seleccionados
+animate()	Ejecuta una animación personalizada en los elementos seleccionados
+clearQueue()	Elimina todas las funciones restantes en cola de los elementos seleccionados
+delay()	Establece un retardo para todas las funciones en cola en los elementos seleccionados
+dequeue()	Elimina la siguiente función de la cola y luego ejecuta la función
+fadeIn()	Se desvanece en los elementos seleccionados
+fadeOut()	Desvanece los elementos seleccionados
+fadeTo()	Desvanece los elementos seleccionados a una opacidad dada
+fadeToggle()	Alterna entre los métodos fadeIn () y fadeOut ()
+finish()	Detiene, elimina y completa todas las animaciones en cola para los elementos seleccionados
+queue()	Muestra las funciones en cola en los elementos seleccionados
+show()	Muestra los elementos seleccionados
+slideDown()	Desliza (muestra) los elementos seleccionados
+slideToggle()	Alterna entre los métodos slideUp () y slideDown ()
+slideUp()	Desliza (oculta) los elementos seleccionados
+stop()	Detiene la animación en ejecución para los elementos seleccionados
+toggle()	Alterna entre los métodos hide () y show ()
+
+
+
+				/*Métodos de JQuery para manipular HTML y CSS
+Lista de todos los métodos y funciones para agregar, eliminar o modificar estilos CSS.
+Además para modificar directamente el contenido HTML.
+Método	Función que realiza*/
+addClass()	Agrega uno o más nombres de clase a los elementos seleccionados
+after()	Inserta contenido después de elementos seleccionados
+append()	Inserta contenido al final de los elementos seleccionados
+appendTo()	Inserta elementos HTML al final de los elementos seleccionados
+attr()	Establece o devuelve atributos / valores de elementos seleccionados
+before()	Inserta contenido antes de elementos seleccionados
+clone()	Hace una copia de los elementos seleccionados
+css()	Establece o devuelve una o más propiedades de estilo para los elementos seleccionados
+detach()	Elimina elementos seleccionados (mantiene datos y eventos)
+empty()	Elimina todos los nodos secundarios y el contenido de elementos seleccionados
+hasClass()	Comprueba si alguno de los elementos seleccionados tiene un nombre de clase especificado
+height()	Establece o devuelve la altura de los elementos seleccionados
+html()	Establece o devuelve el contenido de los elementos seleccionados
+innerHeight()	Devuelve la altura de un elemento (incluye el relleno, pero no el borde)
+innerWidth()	Devuelve el ancho de un elemento (incluye el relleno, pero no el borde)
+insertAfter()	Inserta elementos HTML después de los elementos seleccionados
+insertBefore()	Inserta elementos HTML antes de elementos seleccionados
+offset()	Establece o devuelve las coordenadas de desplazamiento de los elementos seleccionados (en relación con el documento)
+offsetParent()	Devuelve el primer elemento padre
+outerHeight()	Devuelve la altura de un elemento (incluye relleno y borde)
+outerWidth()	Devuelve el ancho de un elemento (incluye relleno y borde)
+position()	Devuelve la posición (relativa al elemento padre) de un elemento
+prepend()	Inserta contenido al principio de los elementos seleccionados
+prependTo()	Inserta elementos HTML al principio de los elementos seleccionados
+prop()	Establece o devuelve propiedades / valores de elementos seleccionados
+remove()	Elimina los elementos seleccionados (incluidos datos y eventos)
+removeAttr()	Elimina uno o más atributos de elementos seleccionados
+removeClass()	Elimina una o más clases de elementos seleccionados
+removeProp()	Elimina una propiedad establecida por el método prop ()
+replaceAll()	Reemplaza elementos seleccionados con nuevos elementos HTML
+replaceWith()	Sustituye elementos seleccionados por nuevos contenidos.
+scrollLeft()	Establece o devuelve la posición de la barra de desplazamiento horizontal de los elementos seleccionados
+scrollTop()	Establece o devuelve la posición de la barra de desplazamiento vertical de los elementos seleccionados
+text()	Establece o devuelve el contenido de texto de los elementos seleccionados
+toggleClass()	Alterna entre agregar / eliminar una o más clases de elementos seleccionados
+unwrap()	Elimina el elemento padre de los elementos seleccionados
+val()	Establece o devuelve el atributo de valor de los elementos seleccionados (para elementos de formulario)
+width()	Establece o devuelve el ancho de los elementos seleccionados
+wrap()	Envuelve elementos HTML alrededor de cada elemento seleccionado
+wrapAll()	Envuelve elementos HTML alrededor de todos los elementos seleccionados
+wrapInner()	Envuelve elementos HTML alrededor del contenido de cada elemento seleccionado
+
+
+
+						/*Métodos de JQuery para AJAX
+Lista de todos los métodos y funciones para AJAX.
+AJAX es el arte de intercambiar datos con el servidor y actualizar el contenido de cualquier página, sin tener que recargarla.*/
+$.ajax()	Realiza una solicitud asíncrona AJAX
+$.ajaxPrefilter()	Maneje las opciones personalizadas de Ajax o modifique las opciones existentes antes de enviar cada solicitud y antes de que sean procesadas por $ .ajax ()
+$.ajaxSetup()	Establece los valores predeterminados para futuras solicitudes AJAX
+$.ajaxTransport()	Crea un objeto que maneja la transmisión real de datos Ajax
+$.get()	Carga datos desde un servidor utilizando una solicitud AJAX HTTP GET
+$.getJSON()	Carga los datos codificados en JSON de un servidor que utiliza una solicitud HTTP GET
+$.getScript()	Carga (y ejecuta) un JavaScript desde un servidor utilizando una solicitud AJAX HTTP GET
+$.param()	Crea una representación serializada de una matriz o un objeto (se puede utilizar como cadena de consulta URL para solicitudes AJAX)
+$.post()	Carga datos desde un servidor mediante una solicitud AJAX HTTP POST
+ajaxComplete()	Especifica una función que se ejecutará cuando se complete la solicitud AJAX
+ajaxError()	Especifica una función que se ejecutará cuando la solicitud AJAX finaliza con un error
+ajaxSend()	Especifica una función que se ejecutará antes de enviar la solicitud AJAX
+ajaxStart()	Especifica una función que se ejecutará cuando comience la primera solicitud AJAX
+ajaxStop()	Especifica una función que se ejecutará cuando todas las solicitudes AJAX hayan finalizado
+ajaxSuccess()	Especifica una función que se ejecutará cuando se complete una solicitud AJAX correctamente
+load()	Carga los datos de un servidor y coloca los datos devueltos en el elemento seleccionado
+serialize()	Codifica un conjunto de elementos de formulario como una cadena para su envío
+serializeArray()	Codifica un conjunto de elementos de formulario como una matriz de nombres y valores
+</script>
+</body>
+</html>

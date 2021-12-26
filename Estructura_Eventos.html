@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+</head>
+<body>
+	<ul>
+		<li>Tema 1</li>
+		<li>Tema 2</li>
+		<li>Tema 3</li>
+	</ul>
+
+	<ul>
+		<li>Perro</li>
+		<li>Gato</li>
+		<li>Canario</li>
+	</ul>
+
+
+
+
+
+<script type="text/javascript" src="jquery-3.6.0.min.js"></script>
+<script type="text/javascript">
+	//La estructura para crear un evento en jquery es usar un selector seguido de la accion que queremos hacer y dentro de los parentecis de la accion ponemos parametros o funciones si es necesario
+	$(document).ready(function(){
+		$("ul li:first-child").hide(5000); //para el caso de la accion hide este metodo recibe dos parametros uno es el tiempo de ejecucion y el otro es una funcion pero esta no es obligarotio
+
+
+	});
+</script>
+</body>
+</html>

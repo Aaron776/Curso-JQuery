@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+</head>
+<body>
+	<h1>Hola Mundo</h1>
+	<p>
+		<p id="p1">Aaron</p>
+		<p class="p2">Ortiz</p>
+	</p>
+	
+	<h3 class="clase1"></h3>
+	<h4 class="clase2"></h4>
+
+
+	<ul>
+		<li>Tema 1</li>
+		<li>Tema 2</li>
+		<li>Tema 3</li>
+	</ul>
+
+	<ul>
+		<li>Perro</li>
+		<li>Gato</li>
+		<li>Canario</li>
+	</ul>
+
+<script type="text/javascript" src="jquery-3.6.0.min.js"></script>
+<script type="text/javascript">
+	/* En jquery podemos usar selectores compuestos y para hacer eso dento del parentesis ponemos los selectores que queremos usar
+
+	Selector por varias clases:Si lo deseamos, podemos indicar varias clases CSS, para obtener todos los elementos que tienen esas clases aplicadas: todas al mismo tiempo. Esto se consigue comenzando por un ".", igual que los selectores de clases, y luego otro "." para separar las distintas clases que queremos utilizar en el selector.
+
+
+	Concatenar varios selectores distintos:Por último, podemos utilizar varios selectores, para obtener todas las etiquetas que cumplen uno de ellos. No hace falta que cumplan todos los selectores a la vez, sino con que uno de ellos concuerde es suficiente. Para ello colocamos todos los selectores que deseamos, separados por una coma ",".
+
+
+	*/
+
+
+	$(document).ready(function(){
+
+		$("p#p1").hide() // aqui usamos un selector de etiqueta html (p) y alado ponemos el selector de id(#p1) y los juntamos en uno solo (p#p1)
+		$("p.p2").hide() // aqui usamos un selector de etiqueta html (p) y alado ponemos el selector de clase(.p1) y los juntamos en uno solo (p.p1)
+
+		$("ul li:first").hide() //aqui estoy haciendo referencia al primer li usando los dos puntos seguido del ubicacion de ese elemento (li:first) y asi podra hacer con los demas ul como el segundo o tercero solo cambiando el nombre first, pero todo esto es solo valido si tenemo una lista en todo el documento si tuvieramos mas de uno ya no valdria
+
+		$("ul li:first-child").hide() // aqui estamos especificando que el primer elemento de las lista en nuesro documento desarezcan, con respecto al anterior caso aqui agregamos el (-child) para que esto pueda ejecutarse correctamento
+
+		//Seleccionar varios selectores del tipo clase
+		$(".clase1.clase2") //selecciona los elementos que tienen class="clase1 clase2" (selectores compuestos)
+
+		// Concatenacion de selectores
+		$("div,p") //selecciona todos los elementos dentro de la etiqueta div y etiqueta p
+		$(".clase1,.clase2") //selecciona los elementos que tienen la clase "clase1" o "clase2"
+		$("#hola,.miclase,ul") //selecciona el elemento con id="hola", los elementos con class="miclase" y todos los elementos dentro de la etiqueta ul
+	});
+</script>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+</head>
+<body>
+	<h1>Hola Mundo</h1>
+	<p id="cuadrado">hsfsdfsd</p>
+	<h3 class="triangulo">Hola</h3>
+
+
+<script type="text/javascript" src="jquery-3.6.0.min.js"></script>
+<script type="text/javascript">
+	// Los selectores es como una variable o una referencia con el cual vamos a seleccionar un elelemnto que queremos modificar o manipular
+
+										//Tipos de Selectores
+	/*Selector de etiquetas html: es cuando colocamos el nombre de la etiqueta dentro de las comillas del selector
+	
+	Selector de Id: Con este selector podemos manipular los elementos que tiene un id en espeficfico, para eso usamos las comillas y ponemos el simbolo del numeral u el nombre del id
+	
+	Selecor de clases: Con este selector podemos manipular los elementos que tiene un clase en espeficfico, para eso usamos las comillas y ponemos un punto y el nombre de la clase
+
+	Selector Universal: Este selector nos permite seleccionar todos los elemento html de nuestro documento y para eso usmaos las comillas y dentro ponemos el simbolo de asterisco(*)
+	*/
+
+	$(document).ready(function(){
+		$("h1").hide() // selector de etiquetas html
+		$("#cuadrado").hide() // selector de id
+		$(".triangulo").hide() // selector de clases
+		$("*").hide() // selector universal
+	});
+
+
+
+	//
+</script>
+</body>
+</html>

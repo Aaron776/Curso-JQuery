@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+</head>
+<body>
+	<h1>HOLA MUNDO</h1>
+
+<script type="text/javascript" src="jquery-3.6.0.min.js"></script>
+<script type="text/javascript">
+	//Usaremos en este caso el selector document y hace referecnia al documento o archivo en que nos encontramos en este momento
+
+	//La funcion ready nos permitira revisar si el documento esta listo ( que no tenga algun problema con el servidor o algun error) y en los parentesis creamos una funcion cualquiera con javascript
+
+	$(document).ready(function(){
+		document.write("Hola Mundo desde Jquery"+"<br>")
+		console.log("Mi nombre es Aron Ortiz")
+	});
+
+
+// Tambien podemos hacer lo mismo de arriba pero reduciendo lineas de codigo con el selector document y el metodo ready() ambos eliminandoles 
+$(function(){
+	document.write("Hola Como Estas")
+});
+
+</script>
+</body>
+</html>
