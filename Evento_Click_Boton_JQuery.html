@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+</head>
+<body>
+	<h1>JQUERY CLASS</h1>
+	<button class="boton1">Ejecutar</button>
+	<button class="boton2">Ejecutar Accion a Texto</button>
+
+<script type="text/javascript" src="jquery-3.6.0.min.js"></script>
+<script type="text/javascript">
+	// A los eventos normalmente se les pasa funciones
+	// Ejemplo de Evento Click en un Boton
+$(document).ready(function(){
+	$(".boton1").click(function(){
+		let resultado=6+6
+		document.write("El resultado es: "+resultado)
+	});
+
+	$(".boton2").click(function(){
+		$("h1").hide(4000)
+	});
+});
+</script>
+</body>
+</html>

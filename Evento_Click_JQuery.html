@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+</head>
+<body>
+	<h1>CURSO JQUERY</h1>
+	<p id="parrafo">Jose juega muy bien Futbol</p>
+
+<script type="text/javascript" src="jquery-3.6.0.min.js"></script>
+<script type="text/javascript">
+	// A los eventos normalmente se les pasa funciones
+	// Ejemplo de Evento Click
+$(document).ready(function(){
+	$("h1").click(function(){
+		alert("Hola Mundo desde Ecuador")
+	})
+
+	$("#parrafo").click(function(){
+		let num1=2
+		let num2=5
+		let resultado=num1+num2
+		alert("La suma es: "+resultado)
+	})
+});
+</script>
+</body>
+</html>

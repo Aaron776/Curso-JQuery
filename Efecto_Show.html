@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+</head>
+<body>
+	<h1>JQUERY CLASS</h1>
+	<button id="boton1">Desaparecer</button>
+	<button class="boton2">Reaparecer</button>
+
+<script type="text/javascript" src="jquery-3.6.0.min.js"></script>
+<script type="text/javascript">
+	// El método show () muestra los elementos seleccionados ocultos. Nota: show () funciona en elementos ocultos con métodos jQuery y display: none en CSS (pero no visibilidad: hidden).
+	
+$(document).ready(function(){
+
+	$("#boton1").click(function(){
+		$("h1").hide(4000)
+	});
+
+	$(".boton2").click(function(){
+		$("h1").show(3000)
+	});
+});
+</script>
+</body>
+</html>
