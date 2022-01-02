@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+</head>
+<body>
+	<h1 class="titulo" style="border: 1px solid black; width: 600px;">JQUERY CLASS</h1>
+
+
+
+
+<script type="text/javascript" src="jquery-3.6.0.min.js"></script>
+<script type="text/javascript">
+	// El evento mouseup se ejecuta luego de soltar el botón del mouse estando dentro del elemento HTML.
+	$(document).ready(function(){
+		$(".titulo").mouseup(function(){
+			$(".titulo").hide(4000)
+		})
+	})
+</script>
+</body>
+</html>

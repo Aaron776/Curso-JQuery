@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+</head>
+<body>
+	<h1 id="titulo" style="border: 1px solid black; width: 600px;">JQUERY CLASS</h1>
+
+
+
+
+<script type="text/javascript" src="jquery-3.6.0.min.js"></script>
+<script type="text/javascript">
+	// El evento mousedown se dispara inmediatamente luego que presionamos con la flecha del mouse un elemento HTML que tiene registrado dicho evento, es casi igualiotop al evento click la diferencia es que podemos dar click con cualquiera de los botones del mouse
+
+	$(document).ready(function(){
+		$("#titulo").mousedown(function(){
+			alert("Curso Jquery")
+		})
+	})
+</script>
+</body>
+</html>

@@ -6,8 +6,8 @@
 </head>
 <body>
 	<h1>JQUERY CLASS</h1>
-	<button class="boton1">Ejecutar</button>
-	<button class="boton2">Ejecutar Accion a Texto</button>
+	<button class="boton1">Ejecutar Operacion Matematica</button>
+	<button class="boton2">Ejecutar Accion a Texto H1</button>
 
 <script type="text/javascript" src="jquery-3.6.0.min.js"></script>
 <script type="text/javascript">
@@ -15,7 +15,9 @@
 	// Ejemplo de Evento Click en un Boton
 $(document).ready(function(){
 	$(".boton1").click(function(){
-		let resultado=6+6
+		num1=prompt("Digite primer numero: ");
+		num2=prompt("Digite segundo numero: ");
+		let resultado=num1+num2
 		document.write("El resultado es: "+resultado)
 	});
 

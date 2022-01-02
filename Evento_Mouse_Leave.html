@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+</head>
+<body>
+	<h1 style="border: 1px solid black; width: 600px;">JQUERY CLASS</h1>
+
+<script type="text/javascript" src="jquery-3.6.0.min.js"></script>
+<script type="text/javascript">
+	//  Un evento mouseleave se dispara cuando el ratón sale del elemento.
+
+	$(document).ready(function(){
+		$("h1").mouseleave(function(){
+			$("h1").text("Bienvenido a Jquery")
+			alert("Hola Aaron")
+		})
+	})
+</script>
+</body>
+</html>
