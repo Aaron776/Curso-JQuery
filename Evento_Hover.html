@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+</head>
+<body>
+	<h1 style="border: 1px solid black; width: 600px;">JQUERY CLASS</h1>
+
+<script type="text/javascript" src="jquery-3.6.0.min.js"></script>
+<script type="text/javascript">
+	// El método hover () especifica dos funciones para ejecutar cuando el puntero del mouse pasa sobre los elementos seleccionados.Este método activa los eventos mouseenter y mouseleave, basicamente mezcla estos dos eventos 
+
+	$(document).ready(function(){
+		$("h1").hover(function(){
+			$("h1").css("background-color", "gold"); //primera funcion cuando paso el mouse por encima del elemento
+		},function(){ // segunda funcion cuando retirno el mouse del elemento
+			$("h1").hide(4000) 
+		});
+	});
+</script>
+</body>
+</html>

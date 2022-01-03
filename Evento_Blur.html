@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+</head>
+<body>
+	<label>Nombre: </label>
+	<input type="type" class="campo">
+<script type="text/javascript" src="jquery-3.6.0.min.js"></script>	
+<script type="text/javascript">
+	// El evento blur()se da cuando un elemento pierde el foco que obtuvo al ser clickado por el ratón o llegando por navegación tabular. Esta funcionalidad puede resultar interesante cuando se trabaja con formularios con numerosos input y elementos con los que el usuario tiene que trabajar.
+
+	$(document).ready(function(){
+		$(".campo").blur(function(){
+    		$(".campo").css("width", "1000px");
+    		$(".campo").css("border-color","red");
+
+		});		
+	});
+</script>
+</body>
+</html>
