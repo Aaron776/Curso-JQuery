@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+</head>
+<body>
+	<div id="cuadrado" style="width: 100px;height: 100px; background-color: green;"></div>
+	<button class="boton1">Accion</button>
+
+<script type="text/javascript" src="jquery-3.6.0.min.js"></script>
+<script type="text/javascript">
+	// El jQuery fadeOut() se utiliza a desaparecer un elemento visible y tiene dos parametros uno es la velocidad y la funcion que queremos que se ejecute
+	
+	$(document).ready(function(){
+		$(".boton1").click(function(){
+			$("#cuadrado").fadeOut(2000,function() {
+				alert("Hola con fadeOut")
+			})
+		})
+	}); 
+</script>
+</body>
+</html>

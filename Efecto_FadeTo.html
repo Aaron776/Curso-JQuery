@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+</head>
+<body>
+	<div id="cuadrado" style="width: 100px;height: 100px; background-color: gold;"></div>
+	<button class="boton1">Accion</button>
+
+<script type="text/javascript" src="jquery-3.6.0.min.js"></script>
+<script type="text/javascript">
+	// El jQuery fadeTo() método cambia gradualmente la opacidad (valor entre 0 y 1), para los elementos seleccionados, este metodo recibe tres parametros, la velocidad de ejecucion, la opacidad y una funcion
+	
+	$(document).ready(function(){
+		$(".boton1").click(function(){
+			$("#cuadrado").fadeTo(2000,0.4,function() {
+				alert("Hola con fadeTo()")
+			})
+		})
+	}); 
+</script>
+</body>
+</html>

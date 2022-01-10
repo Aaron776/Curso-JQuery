@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+</head>
+<body>
+	<h1>JQUERY CLASS</h1>
+	<h2>Aaron Ortiz</h2>
+	<button id="boton1">Hazme Click</button>
+<script type="text/javascript" src="jquery-3.6.0.min.js"></script>
+<script type="text/javascript">
+	// El evento on() permite agregar uno o varios eventos a un elemento, en este vento dentro del parentessis primero ponemos unas comillas y dentro ponemos el nombre de evento que queremos que ejecute 
+	$(document).ready(function(){
+		$("h1").on("click",function(){
+			console.log("Esto es un evento ON")
+		});
+
+		$("#boton1").on("dblclick change",function(){
+		alert('Función on() activada.');
+		});
+
+		$("h2").on({
+		change:function(){alert('El input ha cambiado de valor');},
+		click:function(){alert('Has hecho click en el input');}
+	});
+
+			
+	}); 
+</script>	
+</body>
+</html>
