@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+</head>
+<body>
+	<h1 style="background-color:red ; border: 3px solid black;">HOLA DESDE JQUERY</h1>
+	<button class="boton0">Efectuar Efecto</button>
+	<button class="boton1">Efectuar Efecto</button>
+	<button class="boton2">Efectuar Efecto</button>
+
+<script type="text/javascript" src="jquery-3.6.0.min.js"></script>
+<script type="text/javascript">
+	/*El efecto animate() permite crear animaciones personalizadas, este metodo tiene tres argimentos, el primero la propiedad CSS que queremos aplicar o animar, el segundo es la duracion (este es opcional), y el tercero es la funcion callback
+
+Según la documentación oficial las propiedades CSS que se pueden modificar con esta funcíon jQuery son (enumero por grupos de propiedades):
+
+Propiedades del fondo: backgroundPositionX y backgroundPositionY.
+
+Propiedades de bordes: outlineWidth, borderWidth, borderBottomWidth, borderLeftWidth, borderRightWidth, borderTopWidth y borderSpacing.
+
+Los márgenes de elementos: margin, marginBottom, marginLeft, marginRight y marginTop.
+
+Los márgenes internos: padding, paddingBottom, paddingLeft, paddingRight y paddingTop.
+
+Altura y anchura: height, width, maxHeight, maxWidth, minHeight y minWidth.
+
+Coordenadas: bottom, left, right y top.
+
+Propiedades de párrafo: fontSize, letterSpacing, wordSpacing, lineHeight y textIndent.
+
+Solo se puede aplicar  jQuery animate() a elementos cuyos valores son numéricos, tales como los mencionados anteriormente, por ejemplo, la propiedad ‘background-color‘ NO sería accesible por esta función.*/
+
+$(document).ready(function(){
+	$(".boton0").click(function(){
+  		$("h1").animate({margin:"10px"});
+    });
+	$(".boton1").click(function(){
+          $("h1").animate({width:"500px"},3000);
+    });
+	$(".boton2").click(function(){
+    	$("h1").animate({padding:"20px"},3000,function() {alert ('Efecto terminado!');});
+    });
+}); 
+
+</script>
+</body>
+</html>

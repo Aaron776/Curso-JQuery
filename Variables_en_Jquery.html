@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+</head>
+<body>
+	<h1 class="titulo" style="background-color:red ; border: 3px solid black;">HOLA DESDE JQUERY</h1>
+
+<script type="text/javascript" src="jquery-3.6.0.min.js"></script>
+<script type="text/javascript">
+	//En Jquery podemos usar variables que pueden ayudarnos a contener el selector al cual queremos realizar algo con jquery, es una manera de ahorrar codigo
+$(document).ready(function(){
+	var titulo=$(".titulo") // esta variable contiene un selector
+
+	$(titulo).click(function(){
+		$(titulo).hide(4000)
+	})
+}); 
+
+</script>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<style type="text/css">
+		#panel,#parrafo{
+			padding: 5px;
+			text-align: center;
+			background-color: orangered;
+			border: solid 1px black;
+		}
+
+		
+	</style>
+</head>
+<body>
+
+	<div id="parrafo">Hola</div>
+	<div id="panel">Aaron Ortiz</div>
+
+
+
+<script type="text/javascript" src="jquery-3.6.0.min.js"></script>
+<script type="text/javascript">
+	//Efecto slideDown(): La función slideUp oculta un elemento usando un efecto de deslizamiento, recibe tres parametros este efecto el primero es la velocidad de ejecucion, Velocidad de la animación en diferentes puntos de la misma (este argumento de animacion es opcional) y una funcion callback
+
+	$(document).ready(function(){
+		$("#panel").click(function(){
+			$("#panel").slideUp(3000,function(){
+
+			})
+		})
+	}); 
+</script>
+</body>
+</html>

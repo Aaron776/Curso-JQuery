@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<style type="text/css">
+		#panel,.parrafo{
+			padding: 5px;
+			text-align: center;
+			background-color: darkred;
+			border: solid 1px black;
+		}
+
+		
+	</style>
+</head>
+<body>
+
+	<div class="parrafo">Hola</div>
+	<div id="panel">Aaron Ortiz</div>
+	<br>
+	<button class="boton1">Efectuar Efecto</button>
+
+
+<script type="text/javascript" src="jquery-3.6.0.min.js"></script>
+<script type="text/javascript">
+	//Efecto slideDown(): La función slideToggle muestra y/o oculta un elemento usando un efecto de deslizamiento basicamente permite juntar los efectos SlideDown y SlideUp en un solo efecto, recibe tres parametros este efecto el primero es la velocidad de ejecucion, Velocidad de la animación en diferentes puntos de la misma (este argumento de animacion es opcional) y una funcion callback
+
+	$(document).ready(function(){
+
+		$(".boton1").click(function(){
+			$(".parrafo").slideToggle(3000,function(){
+
+			})
+
+			$("#panel").slideToggle(3000,function(){
+
+			})
+		})
+	}); 
+</script>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<style type="text/css">
+		#panel,#parrafo{
+			padding: 5px;
+			text-align: center;
+			background-color: gold;
+			border: solid 1px black;
+		}
+
+		#panel{
+			padding: 50px;
+			display: none;
+		}
+	</style>
+</head>
+<body>
+
+	<div id="parrafo">Hola</div>
+	<div id="panel">Aaron Ortiz</div>
+
+
+
+<script type="text/javascript" src="jquery-3.6.0.min.js"></script>
+<script type="text/javascript">
+	//Efecto slideDown(): Muestra un elemento con un efecto de deslizamiento (acordeón), recibe tres parametros este efecto el primero es la velocidad de ejecucion, Velocidad de la animación en diferentes puntos de la misma (este argumento de animacion es opcional) y una funcion callback
+
+	$(document).ready(function(){
+		$("#parrafo").click(function(){
+			$("#panel").slideDown(3000,function(){
+
+			})
+		})
+	}); 
+</script>
+</body>
+</html>
