@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+</head>
+<body>
+	<h1  style="background-color:cornsilk ; border: 3px solid black;">HOLA DESDE JQUERY</h1>
+	<h2  style="background-color:gold ; border: 3px solid black;">HOLA MUNDO</h2>
+
+<script type="text/javascript" src="jquery-3.6.0.min.js"></script>
+<script type="text/javascript">
+	// Este Metodo css() Sirve para cambiar y obtener el valor de cualquier atributo css.El método css() sirve tanto para recibir el valor de un atributo CSS como para asignarle un nuevo valor y su funcionamiento depende de los parámetros que podamos enviarle. Este metodo usa varios parametros que son primero el nombre de la propiedad css y el segundo parametro es el valor de esa propiedad.
+
+	// Cambiar varios atributos CSS al mismo tiempo: Podemos enviar todos los atributos CSS que deseemos y sus nuevos valores, en notación de objeto. Con esto conseguimos que, en una única llamada a css() se cambien varias propiedades a la vez.
+	
+
+
+	$(document).ready(function(){
+
+		//Cambiar valores de las propiedades Css
+		$("h1").click(function(){
+			$("h1").css("background-color","green")
+			$("h1").css("color","red")
+		})
+
+		//Agreagr varias propiedades css al mismo tiempo
+		$("h2").click(function(){
+			$("h2").css({
+   				"background-color": "#ff8800",
+   				"position": "absolute",
+   				"width": "100px",
+   				"top": "100px",
+   				"left": "200px"
+				})
+		})
+
+
+		// Obetener el valor de una propiedad con el metodo css()
+
+		$("h1").click(function(){
+			var propiedad=$("h1").css("border")
+			alert(propiedad)
+			
+		})
+		
+}); 
+</script>
+</body>
+</html>

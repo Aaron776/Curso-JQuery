@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+</head>
+<body>
+	<h1  style="background-color:blueviolet ; border: 3px solid black;">HOLA DESDE JQUERY</h1>
+
+<script type="text/javascript" src="jquery-3.6.0.min.js"></script>
+<script type="text/javascript">
+	// Los callbacks son funciones que se llaman dentro de los eventos o efetos de jquery, se creo el callback para llamar una funcion despues de aplicar un evento o efecto, todos los callbacks sirven de argumentos en los efectos o eventos y son opcionales de poner, ademas froman parte de un parametro de ese evento o efecto
+
+	$(document).ready(function(){
+		$("h1").click(function(){
+			$("h1").hide(4000,function(){
+				let resultado= 100+2
+				alert("El resultado es: "+resultado)
+			})
+		})
+
+		
+}); 
+</script>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+</head>
+<body>
+	<h1 class="titulo" style="background-color:green ; border: 3px solid black;">HOLA DESDE JQUERY</h1>
+	<button id="boton1">Activar</button>
+	<button id="boton2">Detener</button>
+	<br>
+	<h1 class="titulo2" style="background-color:gold ; border: 3px solid black;">HOLA AARON ORTIZ</h1>
+	<button id="boton3">Activar</button>
+	<button id="boton4">Detener</button>
+
+<script type="text/javascript" src="jquery-3.6.0.min.js"></script>
+<script type="text/javascript">
+	// El efecto stop() tiene la funcionalidad  de detener las funciones o efectos que se estén ejecutando antes de que finalicen, esta funcion tiene dos parametros el primero (stopAll)  es opcional este parámetro especifica si la cola de funciones del selector debe detenerse por completo y el segundo tambien es opcional por defecto su valor es ‘false’, especifica si la ejecución actual de la función debe completarse (goToEnd).jQuery stop() también puede paralizar animaciones como animate(), show y hide(), toggle().
+
+	$(document).ready(function(){
+
+		$("#boton1").click(function(){
+			$(".titulo").slideUp(6000);
+	});
+
+		$("#boton2").click(function(){
+			$(".titulo").stop();
+	});
+
+
+		$("#boton3").click(function(){
+			$(".titulo2").fadeOut(2000);
+	});
+
+		$("#boton4").click(function(){
+			$(".titulo2").stop();
+			$(".titulo").stop(true);// aqui esta deteniendo la nimacion del del h1 con ese id
+			
+	});
+		
+		
+}); 
+</script>
+</body>
+</html>
