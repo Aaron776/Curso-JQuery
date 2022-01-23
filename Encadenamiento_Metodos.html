@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+</head>
+<body>
+	<h1  style="background-color:cornsilk ; border: 3px solid black; width: 500px; height: 200px; display: flex;align-items: center;justify-content: center;">HOLA DESDE JQUERY</h1>
+	
+	<button id="boton1">Ejecutar</button>
+
+<script type="text/javascript" src="jquery-3.6.0.min.js"></script>
+<script type="text/javascript">
+	// El encadenamiento basicamente es un metodo o metodologia que sirve para ahorrar codigo, para que se de el ecadenamiento despues de poner un evento o efecto a lado poenmos el siguiente metodo o efecto y asi susecivamente
+	
+	$(document).ready(function(){
+		$("#boton1").click(function(){
+			$("h1").css("background-color","red").slideUp("3000").slideDown("3000").animate({width:'1000px',height:'500px'}) // en este ejemplo se puede ver un efecto o evento unos despues de otro
+			
+		})
+		
+		
+}); 
+</script>
+</body>
+</html>

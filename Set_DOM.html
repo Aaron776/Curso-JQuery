@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+</head>
+<body>
+	<p id="titulo" style="background-color:cornsilk ; border: 3px solid black;">HOLA <b>DESDE</b> JQUERY</p>
+	<button class="boton1">Establecer Texto</button>
+	<button class="boton2">Establecer Html</button>
+	
+
+<script type="text/javascript" src="jquery-3.6.0.min.js"></script>
+<script type="text/javascript">
+	// El SET (establecer) podemos usar con los metodos: text(para colocar  texto de un elemento html),html(para colocar el codigo html de ese elemento),val
+	$(document).ready(function(){
+		$(".boton1").click(function(){
+			$("#titulo").text("ESTE CURSO ES GENIAL"); // aqui estoy ingresando  texto a esa etiqueta html
+		})
+
+		$(".boton2").click(function(){
+			("#titulo").html("<b>esto es muy bueno</b>"); // aqui estoy estableciendo codigo html  dentro de ese elemento
+		})
+}); 
+</script>
+</body>
+</html>

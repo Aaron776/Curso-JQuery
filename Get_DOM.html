@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+</head>
+<body>
+	<p id="titulo" style="background-color:cornsilk ; border: 3px solid black;">HOLA <b>DESDE</b> JQUERY</p>
+	<button class="boton1">Mostrar Texto</button>
+	<button class="boton2">Mostrar Html</button>
+	
+
+<script type="text/javascript" src="jquery-3.6.0.min.js"></script>
+<script type="text/javascript">
+	// El GET (obtener) podemos usar con los metodos: text(para obtener el texto de un elemento html),html(para obtener el codigo html de ese elemento),val
+	$(document).ready(function(){
+		$(".boton1").click(function(){
+			alert("El texto dice: "+$("#titulo").text()); // aqui estoy mostrando el texto que tiene esa etiqueta html
+		})
+
+		$(".boton2").click(function(){
+			alert("El codigo HTML es: "+$("#titulo").html()); // aqui estoy mostrando el codigo html que esta dentro de ese elemento
+		})
+}); 
+</script>
+</body>
+</html>
