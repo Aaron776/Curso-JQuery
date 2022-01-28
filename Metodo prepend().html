@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+</head>
+<body>
+	<p id="titulo" style="background-color:darkred ; border: 3px solid black; color: whitesmoke;">DESDE JQUERY</p>
+	<button class="boton1">Establecer</button>
+	
+	<ol>
+		<li>Elemento 4</li>
+		<li>Elemento 5</li>
+		<li>Elemento 6</li>
+	</ol>
+	<button class="boton2">Agregar</button>
+	<button class="boton3">Agregar Varios</button>
+
+<script type="text/javascript" src="jquery-3.6.0.min.js"></script>
+<script type="text/javascript">
+	// El metodo prepend() que tiene como funcionalidad añadir o insertar contenido al comienzo del elemento seleccionado, este metodo recibe tres parametros el primero es obligatorio y es el contenido que queremos insertar pudiendo ser objetos jQuery, HTML o texto, el segundo parametro y tercer arametro son opcionales
+	$(document).ready(function(){
+		$(".boton1").click(function(){
+			$("#titulo").prepend("<b> HOLA ")
+			//$("#titulo").append("HTML")
+		})
+
+
+		$(".boton2").click(function(){
+			$("ol").prepend("<li>Elemento 1</li>")
+		})
+
+
+		$(".boton3").click(function(){
+			let val1="<li>Elemento 1</li>"
+			let val2="<li>Elemento 2</li>"
+			let val3="<li>Elemento 3</li>"
+			$("ol").prepend(val1,val2,val3) // agrgar varios elementos de golpe
+		})
+
+	})	
+</script>
+</body>
+</html>

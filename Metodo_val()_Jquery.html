@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+</head>
+<body>
+	<input type="text" id="nombre" value="Ferrari">
+	<button class="boton1">Mostrar</button>
+	<button class="boton2">Establecer</button>
+
+<script type="text/javascript" src="jquery-3.6.0.min.js"></script>
+<script type="text/javascript">
+	// El método val() es un método incorporado en jQuery que se utiliza para devolver o establecer el valor del atributo para los elementos seleccionados. Este método se aplica a los elementos del formulario HTML.
+	$(document).ready(function(){
+		$(".boton1").click(function(){
+			alert("El valor es: "+$("#nombre").val()) // obtnego el valor del campo
+		})
+
+
+		$(".boton2").click(function(){
+			 $("#nombre").val("Chevrolet") // agrego un valor al campo, puede ser un string, numero o booleano, o poner en vacio el campo
+			 //$("#nombre").val(24)
+			 //$("#nombre").val(true)
+			 //$("#nombre").val("")
+		})
+
+}); 
+</script>
+</body>
+</html>
