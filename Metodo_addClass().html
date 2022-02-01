@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<style type="text/css">
+		.cambiar{
+			color: blueviolet;
+			font-size: 100px;
+
+		}
+	</style>
+</head>
+<body>
+	
+	<p class="parrafo2" style="background-color:darkgoldenrod; border: 3px solid black;">JQUERY</p>
+	<button class="boton1">Añadir Clase</button>
+	
+	
+
+<script type="text/javascript" src="jquery-3.6.0.min.js"></script>
+<script type="text/javascript">
+	// El metodo addClass() añade una o más clases a los elementos seleccionados, este metodo recibe dos parametros el primer parametro es el nombre de la Clase que queremos añadir y el sgundo paraemtro es una funcion callback pero esta es opcional
+		$(document).ready(function(){
+			$(".boton1").click(function(){
+				$(".parrafo2").addClass("cambiar") 
+			})
+	})	
+</script>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+</head>
+<body>
+	<p id="parrafo" style="background-color:goldenrod; border: 3px solid black;">Aaron</p>
+	<p class="parrafo2" style="background-color:goldenrod; border: 3px solid black;">JQUERY</p>
+	<button class="boton1">Eliminar</button>
+	
+	
+
+<script type="text/javascript" src="jquery-3.6.0.min.js"></script>
+<script type="text/javascript">
+	// Con el metodo remove() podemos eliminar cualquier elemento (div, etiqueta html) y todo su contenido del DOM de nuestra web, dentrro del parentesis ponemos el nombre de la etiqueta o selector o queremos eliminar
+		$(document).ready(function(){
+			$(".boton1").click(function(){
+				$(".parrafo2,#parrafo").remove() // aqui elimine los dos elementos que tiene los selectores
+			})
+	})	
+</script>
+</body>
+</html>

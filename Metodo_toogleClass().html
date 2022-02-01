@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<style type="text/css">
+		.cambiar{
+			color: blueviolet;
+			font-size: 100px;
+
+		}
+	</style>
+</head>
+<body>
+	
+	<p class="parrafo2" style="background-color:darkgoldenrod; border: 3px solid black;">JQUERY</p>
+	<button class="boton1">Efectuar</button>
+	<button class="boton2">Añadir</button>
+	<button class="boton3">Eliminar</button>
+	
+	
+	
+
+<script type="text/javascript" src="jquery-3.6.0.min.js"></script>
+<script type="text/javascript">
+	// El método toggleClass() es un método incorporado en jQuery que se usa para alternar o cambiar la clase que se adjuntó con el elemento seleccionado, este método acepta tres parámetros como se mencionó anteriormente y se describe a continuación:clase: es el parámetro requerido y se utiliza para especificar el nombre de la clase que se debe reemplazar.función: es un parámetro opcional y se utiliza para especificar una función que devuelve uno o más nombres de clase. Este parámetro contiene la posición de índice del elemento y el nombre de clase del elemento.switch: Es un parámetro opcional y se usa para especificar verdadero o falso. Por defecto es cierto.
+		$(document).ready(function(){
+			$(".boton1").click(function(){
+				$(".parrafo2").toggleClass("cambiar") 
+			})
+
+			$(".boton2").click(function(){
+				$(".parrafo2").addClass("cambiar") 
+			})
+
+			$(".boton3").click(function(){
+				$(".parrafo2").removeClass("cambiar") 
+			})
+
+	})	

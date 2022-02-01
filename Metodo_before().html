@@ -15,7 +15,7 @@
 	// Este método permite añadir contenido justo después del cierre de etiqueta del elemento seleccionado. Un ejemplo de uso sería cuando se valida un formulario y queremos que el error se muestre justo debajo del campo que tiene el valor erróneo.
 		$(document).ready(function(){
 			$(".boton1").click(function(){
-				$("#parrafo").after("Hola After")
+				$("#parrafo").before("<h1>Hola desde Before</h1>")
 			})
 	})	
 </script>

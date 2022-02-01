@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+</head>
+<body>
+	<p id="parrafo" style="background-color:goldenrod; border: 3px solid black;">Aaron</p>
+	<p class="parrafo2" style="background-color:goldenrod; border: 3px solid black;">JQUERY</p>
+	<button class="boton1">Eliminar</button>
+	
+	
+
+<script type="text/javascript" src="jquery-3.6.0.min.js"></script>
+<script type="text/javascript">
+	// El metodo empty(): Elimina el contenido que contiene un elemento, incluyendo los nodos hijos o subnodos pero el elemento padre no se elimina, se deja vacío, la diferencia con el metodo remove e que solo eliminar el contenido del selector mas no sus caracteresticas como si lo hcai el metodo remove
+		$(document).ready(function(){
+			$(".boton1").click(function(){
+				$(".parrafo2").empty() 
+			})
+	})	
+</script>
+</body>
+</html>
