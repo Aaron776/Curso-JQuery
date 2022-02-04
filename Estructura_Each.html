@@ -1,0 +1,20 @@
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+</head>
+</style>
+<body>
+<script type="text/javascript" src="jquery-3.6.0.min.js"></script>
+<script type="text/javascript">
+	/* jQuery each(), su funcionalidad es la de recorrer los elementos de un mismo tipo y a su vez ejecutar una acción por cada uno de ellos, este metodo recibe el elemnto que tiene el arreglo y una funcion la cual tiene dos parametros el primero es el indice del elemento y segundo es el elemento del arreglo*/
+		$(document).ready(function(){
+			var numeros=[1,2,3,4,5];
+			$.each(numeros, function(index,elemento){
+				alert(index+" - "+elemento)
+			})
+			
+	})	
+</script>
+</body>
+</html>
