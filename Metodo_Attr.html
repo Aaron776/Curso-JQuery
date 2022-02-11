@@ -1,0 +1,28 @@
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+</head>
+</style>
+<body>
+	<img src="https://s.mxmcdn.net/images-storage/albums5/9/3/5/6/5/2/60256539_500_500.jpg">
+	<button id="boton">Cambiar Atributo</button>
+<script type="text/javascript" src="jquery-3.6.0.min.js"></script>
+<script type="text/javascript">
+	/*
+	 La función de jQuery attr()  vale para obtener y/o modificar valores en los atributos de los diferentes elementos del DOM de una página web, este metodo recibe dos parametros el primero es el nombre del atributo o propiedad que queremos cambiar y  el otro parametro es el valor que queremos darle a ese elemento.
+
+	attr() se suele combinar con la función each() a la hora de recorrer elementos y trabajando con selectores.
+
+	 */
+		$(document).ready(function(){
+    		$("#boton").click(function(){
+        		$("img").attr("width","300");
+        		$("img").attr("height","1000");
+    		});
+
+    		
+});	
+</script>
+</body>
+</html>
